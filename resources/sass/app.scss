@@ -1,0 +1,150 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+$base-gradient:'flat';
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+.login-background{
+	background-image:url('../images/bg.jpg');
+	background-size: cover;
+}
+
+// Estilos de la plantilla de resumen de la cotización
+
+.triton-cotizador-resume-tpl{
+	color: #1E1E1E;
+	margin-top:2px;
+
+	//background:#FFF;
+	b{ color:#3b5998;}
+	span{
+		font-weight:bold;
+		//color:#AAA;
+		display: block;
+		text-transform: uppercase;
+		height: auto;
+		background:rgba(219,238,255,1);
+		border:1px solid rgba(117,217,249,1);
+		border-radius:2px;
+		text-align: center;
+		font-size: 80%;
+		margin-top:3px;
+	}
+	div{
+		padding: 5px 3px 0px 3px;
+		height: 30px;
+		width: 98%;
+		margin: auto;
+		border: #1E1E1E solid 1px;
+		text-align: left;
+	}
+	.header{
+		background:#FFF;
+		border-bottom: #1E1E1E dashed 0px;
+		b{
+			margin-right: 5px;
+		}
+	}
+	.ocupacion{
+		background:#FFF;
+		border-top-left-radius:2px;
+		border-top-right-radius:2px;
+		border-bottom: #1E1E1E dashed 0px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.datos{
+		border-bottom-left-radius:2px;
+		border-bottom-right-radius:2px;
+		height: 120%;
+		margin-bottom: 2px;
+		background: url(../images/crossword.png);
+		padding:5px;
+		ul{
+			li{
+				font-size: 80%;
+				border-bottom:1px #CCC dashed;
+				b{
+					float: right;
+				}
+				k{
+					font-size: 10px;
+					color:#3b5998;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+		.prima-total{
+		}
+	}
+	table{
+		width: 100%;
+	}
+	table,th,td	{
+		border:1px solid rgba(219,238,255,1);
+		border-collapse:collapse;
+		font-size: 80%;
+		color: #1e1e1e;
+	}
+	th,td{
+		padding:5px;
+	}
+	th{
+		text-align:left;
+	}
+}
+.triton-cartera-client-tpl{
+	span{
+		font-size: 80%;
+		color: #1E1E1E;
+	}
+}
+.triton-cartera-client-tpl-green{
+	background:rgba(219,238,255,1);
+	padding:10px;
+	span{
+		font-size: 80%;
+		color: #1E1E1E;
+	}
+}
+.triton-configuracion{
+	//text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	color: #444;
+	text-shadow: rgba(255, 255, 255, 0.3) 0 1px 0;
+	padding: 10px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+//masking styles
+.x-mask .x-loading-spinner-outer {
+    min-width: 20.5em !important;
+    height: 15.5em !important;
+    .x-loading-spinner {
+    	font-size: 550%;
+    	color: #FFF;
+		height: 1em;
+		width: 1em;
+		position: relative;
+		-webkit-transform-origin: 0.5em 0.5em;
+		transform-origin: 0.5em 0.5em;
+    }    
+}
+.x-mask .x-mask-message{    	
+    	position: absolute;
+		bottom: 5px;
+		color: #DDD;
+		left: 0;
+		right: 0;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		font-size: 150%;
+    } 
+
+
+// Examples of using the icon mixin:
+// @include icon('user');
